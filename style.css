@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 .max-width {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .logo {
@@ -124,7 +124,6 @@ nav a:hover {
 
 .article {
     align-items: center;
-    height: 40vh;
     padding: 70px;
     background-color: #F5F5F5;
 }
@@ -218,8 +217,9 @@ nav a:hover {
     font-family: 'Questrial';
     text-transform: uppercase;
     color: #425e58;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
+    line-height: 30px;
 }
 
 .green-title {
@@ -273,6 +273,29 @@ nav a:hover {
     grid-template-columns: 50% 50%;
     background-color: #F5F5F5;
 }
+
+.grid-pic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+}
+
+.grid-pic img {
+    max-width: 95%;
+}
+
+.grid-man-pic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+
+.man-img {
+    width: 80%;
+
+}
+
 
 p {
     font-family: 'DM Sans';
@@ -349,6 +372,45 @@ textarea {
     color: white;
 }
 
+.footer {
+    display: flex;
+    align-items: stretch;
+    padding: 30px;
+    background-color: #EFEBE9;
+    min-height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(82, 82, 82);
+}
+
+.footer h3 {
+    font-family: 'Questrial';
+    text-transform: uppercase;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+.liens {
+    font-size: 0.9em;
+    display: block;
+}
+
+.liens h3 {
+    padding: 3px;
+}
+
+.footer a:hover {
+    opacity: 50%;
+}
+
+.address, .phone {
+    display: flex;
+    gap: 30px;
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -374,12 +436,17 @@ textarea {
         padding: 0;
     }
 
+
     .padding-responsive {
         padding: 50px;
     }
 
     .flex {
         align-items: center;
+    }
+
+    .liens {
+        display: none;
     }
     
 }
@@ -416,4 +483,22 @@ textarea {
     .white-button {
         width: 80%;
     }
+    
+    .max-width {
+        max-width: 100%;
+    }
+
+    .article-page {
+        padding: 30px;
+    }
+
+    .green-bg {
+        padding: 0;
+        text-align: justify;
+    }
+
+    .address, .phone {
+        gap: 10px;
+    }
+
 }
