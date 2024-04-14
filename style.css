@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* BURGER MENU */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Commence transparent */
+    transition: background-color 0.3s ease-in-out; /* Ajoute une transition pour l'opacité */
+    pointer-events: none; /* Empêche les événements de souris sur l'overlay lorsqu'il est transparent */
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Commence en dehors de l'écran */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out; /* Ajoute une transition pour le déplacement horizontal */
+    z-index: 1000; /* Assure que le menu est au-dessus de l'overlay */
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 10px 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition pour la rotation des barres */
+    display: none;
+}
+
+.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Rotation de 45 degrés */
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0; /* Disparition */
+}
+
+.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Rotation de -45 degrés */
+}
+
+/* END BURGER MENU */
+
+
+nav {
+    height: 50px;
+    justify-content: space-between;
+    font-family: 'Questrial';
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color:#F5F5F5;
+
+}
+
+nav a {
+    color: rgb(35, 67, 66);
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 70%;
+}
+
+.max-width {
+    max-width: 80%;
+}
+
+.logo {
+    font-family: 'Questrial';
+    font-weight: 600;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#F5F5F5;
+}
+
+.desktopMenu {
+    visibility: visible;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article {
+    align-items: center;
+    height: 40vh;
+    padding: 70px;
+    background-color: #F5F5F5;
+}
+
+.article-page {
+    align-items: center;
+    padding: 70px;
+    background-color: #F5F5F5;
+}
+
+.background-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("/img/br-index.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+
+.background-title {
+    background-image: url("/img/br-index.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display';
+    color: white;
+    font-size: 1.5em;
+}
+
+.name {
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+}
+
+.description {
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+    margin: 30px;
+    font-weight: 300;
+}
+
+.flex-jcc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.padding-fixed {
+    padding: 30px;       
+}
+
+.padding-img {
+    padding: 70px;
+}
+
+.title-margin {
+    padding: 30px;
+}
+
+.text-margin {
+    padding: 15px;
+}
+
+.darker-bg {
+    background-color: #EFEBE9;
+    padding: 40px;
+}
+
+.green-bg {
+    padding: 40px;
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: #425e58;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.green-title {
+    padding: 40px;
+    font-family: 'DM Serif Display';
+    font-style: italic;
+    color: #425e58;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.white-button {
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    padding: 20px 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    margin: 30px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.white-button:hover {
+    background-color: white;
+    color: grey;
+}
+
+.black-button {
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: #1E3933;
+    padding: 10px 20px;
+    border: 2px solid #1E3933;
+    text-decoration: none;
+    width: 300px;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.DM-Serif-title {
+    font-family: 'DM Serif Display';
+    color: #1E3933;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #F5F5F5;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.black-button:hover {
+    background-color: #1E3933;
+    color: white;
+}
+
+.mains {
+    width: 450px;
+}
+
+legend {
+    padding: 3px 10px;
+  }
+
+fieldset {
+    text-align: center; /* Centrer le contenu du fieldset */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label p {
+    color: rgb(81, 81, 81);
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(72, 95, 87, 0.094);
+}
+
+select, option, input, input:focus, textarea {
+    font-family: 'DM Sans';
+  }
+
+input:focus, textarea:focus {
+    border: none;
+  }
+
+textarea {
+    resize: none;
+  }
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-image: url("/img/br-index.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    color: white;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    nav {
+        font-size: 0.8em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .padding-img {
+        padding: 0;
+    }
+
+    .padding-responsive {
+        padding: 50px;
+    }
+
+    .flex {
+        align-items: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .bar {
+        display: block;
+    }
+    
+    .desktopMenu {
+        visibility: hidden;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .padding {
+        padding: 0;
+    }
+
+    .flex-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .white-button {
+        width: 80%;
+    }
+}
