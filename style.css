@@ -140,7 +140,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-image: url("/img/br-index.jpg");
+    background-image: url("br-index.jpg");
     background-size: cover;
     width: 100%;
     height: 70vh;
@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 .background-title {
-    background-image: url("/img/br-index.jpg");
+    background-image: url("br-index.jpg");
     background-size: cover;
     height: 300px;
     display: flex;
@@ -339,7 +339,7 @@ textarea {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-image: url("/img/br-index.jpg");
+    background-image: url("br-index.jpg");
     background-size: cover;
     width: 100%;
     height: 20vh;
