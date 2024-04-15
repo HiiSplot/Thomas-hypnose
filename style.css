@@ -47,7 +47,7 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #a29690;
     margin: 5px 0;
     cursor: pointer;
     transition: transform 0.3s ease-in-out; /* Ajoute une transition pour la rotation des barres */
@@ -100,8 +100,9 @@ nav a:hover {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color:#F5F5F5;
+    padding-left: 10px;
 }
 
 .desktopMenu {
@@ -511,8 +512,13 @@ textarea {
         text-align: justify;
     }
 
+    input[type="text"], input[type="email"], select, textarea {
+        width: 90%;
+    }
+
     .address, .phone {
         gap: 10px;
     }
+    
 
 }
