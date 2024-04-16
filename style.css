@@ -396,6 +396,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     color: rgb(82, 82, 82);
+    font-size: 0.9em;
 }
 
 .footer h3 {
