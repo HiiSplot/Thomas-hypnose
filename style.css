@@ -512,6 +512,10 @@ textarea {
         padding: 0;
     }
 
+    p {
+        text-align: left;
+    }
+
     .grid-man-pic, .grid-pic {
         display: block;
     }
