@@ -16,23 +16,19 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Thomas Fromaget | L'hypnose</title>
 </head>
-<body>
+<div>
 
-    <div id="overlay"></div>
-
-    <div class="logo">
-        <div class="menu-btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <a href="index.html" style="text-align:center">LOGO</a>
-
-        <div></div>
+    <div class="logo flex-jcc">
+        <a href="index.html">LOGO</a>
     </div>
+
+    <div id="side-bar">
+        <div class="toggle-btn" id="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     
-    <div id="menu">
         <ul>
             <li>
                 <a href="hypnose.html">L’hypnose</a>
@@ -56,138 +52,138 @@
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
-    </div>
+      </div>
 
-    <div class="menu-close">
-        <div class="close1"></div>
-        <div class="close2"></div>
-    </div>
+        <div class="content">
 
-    <nav class="desktopMenu">
-        <ul class="flex-menu">
-            <li>
-                <a href="hypnose.html">L’hypnose</a>
-            </li>
-            <li>
-                <a href="comment-ça-marche.html">Comment ça marche ?</a>
-            </li>
-            <li>
-                <a href="deroulement.html">Déroulement</a>
-            </li>
-            <li>
-                <a href="champs-intervention.html">Champs d’intervention</a>
-            </li>
-            <li>
-                <a href="tarifs-dispo.html">Tarifs & disponibilités</a>
-            </li>
-            <li>
-                <a href="a-propos.html">A propos</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="desktopMenu">
+            <ul class="flex-menu">
+                <li>
+                    <a href="hypnose.html">L’hypnose</a>
+                </li>
+                <li>
+                    <a href="comment-ça-marche.html">Comment ça marche ?</a>
+                </li>
+                <li>
+                    <a href="deroulement.html">Déroulement</a>
+                </li>
+                <li>
+                    <a href="champs-intervention.html">Champs d’intervention</a>
+                </li>
+                <li>
+                    <a href="tarifs-dispo.html">Tarifs & disponibilités</a>
+                </li>
+                <li>
+                    <a href="a-propos.html">A propos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <div class="background-title">
+        <div class="background-title">
+            
+            <h1 class="text-align-center">Contact</h1>
+
+        </div>
         
-        <h1 class="text-align-center">Contact</h1>
+        <div class="article-page">
 
-    </div>
-    
-    <div class="article-page">
+        <form action="confirmation.html" method="post">
 
-    <form action="confirmation.html" method="post">
+            <fieldset>
 
-        <fieldset>
-
-        <legend>
-            <h1 class="DM-Serif-title">Formulaire de contact</h1>
-        </legend>
-
-        <div class="title-margin"></div>
-
-        <div class="form">
-
-            <label for="name"><p>Nom & prénom</p></label><br>
-            <input type="text" name="name"><br>
-
-            <div class="text-margin"></div>
-
-            <label for="email"><p>Adresse mail</p></label><br>
-            <input type="email" name="email"><br>
-
-            <div class="text-margin"></div>
-
-            <label for="object"><p>Objet de votre message</p></label><br>
-            <select name="subject" id="subject">
-                <option value="0"><p>— Veuillez choisir un sujet —</p></option>
-                <option value="1">Prendre RDV (en cabinet - Barcelone)</option>
-                <option value="2">Prendre RDV (à distance - vidéo consultation)</option>
-                <option value="3">Demande d'informations</option>
-            </select><br>
-
-            <div class="text-margin"></div>
-
-            <label for="msg" disabled><p>Votre message (optionnel)</p></label><br>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <legend>
+                <h1 class="DM-Serif-title">Formulaire de contact</h1>
+            </legend>
 
             <div class="title-margin"></div>
 
-            <input type="submit" value="Envoyer" name="submit" class="black-button">
+            <div class="form">
 
-            <div class="title-margin"></div>
+                <label for="name"><p>Nom & prénom</p></label><br>
+                <input type="text" name="name"><br>
+
+                <div class="text-margin"></div>
+
+                <label for="email"><p>Adresse mail</p></label><br>
+                <input type="email" name="email"><br>
+
+                <div class="text-margin"></div>
+
+                <label for="object"><p>Objet de votre message</p></label><br>
+                <select name="subject" id="subject">
+                    <option value="0"><p>— Veuillez choisir un sujet —</p></option>
+                    <option value="1">Prendre RDV (en cabinet - Barcelone)</option>
+                    <option value="2">Prendre RDV (à distance - vidéo consultation)</option>
+                    <option value="3">Demande d'informations</option>
+                </select><br>
+
+                <div class="text-margin"></div>
+
+                <label for="msg" disabled><p>Votre message (optionnel)</p></label><br>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+
+                <div class="title-margin"></div>
+
+                <input type="submit" value="Envoyer" name="submit" class="black-button">
+
+                <div class="title-margin"></div>
+
+            </div>
+
+            </fieldset>
+
+        </form>
 
         </div>
 
-        </fieldset>
+        <div class="footer">
 
-    </form>
-
-    </div>
-
-    <div class="footer">
-
-        <div class="address">
-            <div>
-                <span class="material-symbols-outlined">location_on</span>
+            <div class="address">
+                <div>
+                    <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <hr>
+                <div>
+                    <h3>Thomas Fromaget</h3>
+                    <p>Adresse</p>
+                </div>
             </div>
-            <hr>
-            <div>
-                <h3>Thomas Fromaget</h3>
-                <p>Adresse</p>
-            </div>
-        </div>
-    
-        <div class="phone">
-            <div>
-                <span class="material-symbols-outlined">phone_in_talk</span>
-            </div>
-            <hr>
-            <div>
-                <h3>Whatsapp</h3>
-                <p>06 XX XX XX XX</p>
-            </div>
-        </div>
-    
-    
-            <div class="liens">
-                <h3><a href="hypnose.html">L'hypnose</a></h3>
-                <h3><a href="comment-ça-marche.html">Comment ça marche?</a></h3>
-                <h3><a href="deroulement.html">Déroulement</a></h3>
-                <h3><a href="champs-intervention.html">Champs d'intervention</a></h3>
-            </div>
-    
-            <div class="liens">
-                <h3><a href="tarifs-dispo.html">tarifs & disponibilités</a></h3>
-                <h3><a href="contact.html">prendre contact</a></h3>
-                <h3><a href="a-propos.html">à propos</a></h3>
-            </div>
-    
-        </div>
         
+            <div class="phone">
+                <div>
+                    <span class="material-symbols-outlined">phone_in_talk</span>
+                </div>
+                <hr>
+                <div>
+                    <h3>Whatsapp</h3>
+                    <p>06 XX XX XX XX</p>
+                </div>
+            </div>
+        
+        
+                <div class="liens">
+                    <h3><a href="hypnose.html">L'hypnose</a></h3>
+                    <h3><a href="comment-ça-marche.html">Comment ça marche?</a></h3>
+                    <h3><a href="deroulement.html">Déroulement</a></h3>
+                    <h3><a href="champs-intervention.html">Champs d'intervention</a></h3>
+                </div>
+        
+                <div class="liens">
+                    <h3><a href="tarifs-dispo.html">tarifs & disponibilités</a></h3>
+                    <h3><a href="contact.html">prendre contact</a></h3>
+                    <h3><a href="a-propos.html">à propos</a></h3>
+                </div>
+        
+            </div>
+            
+        </div>
+
     </div>
 
+    <script src="script.js"></script>
     
 </body>
 </html>

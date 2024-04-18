@@ -7,65 +7,82 @@
 
 /* BURGER MENU */
 
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-width: 100%;
+#side-bar {
+    position: absolute;
+    width: 330px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Commence transparent */
-    transition: background-color 0.3s ease-in-out; /* Ajoute une transition pour l'opacité */
-    pointer-events: none; /* Empêche les événements de souris sur l'overlay lorsqu'il est transparent */
-}
-
-#menu {
-    position: fixed;
+    background: #F5F5F5;
     top: 0;
-    left: -300px; /* Commence en dehors de l'écran */
-    width: 300px;
-    height: 100%;
-    background-color: #fff;
-    transition: left 0.3s ease-in-out; /* Ajoute une transition pour le déplacement horizontal */
-    z-index: 1000; /* Assure que le menu est au-dessus de l'overlay */
-}
+    left: -330px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+    font-family: 'Questrial';
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#menu ul li {
-    padding: 10px 20px;
-}
-
-#menu ul li a {
+  #side-bar a {
+    color: rgb(35, 67, 66);
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
+    padding: 10px;
+  }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #a29690;
-    margin: 5px 0;
+  #side-bar ul {
+    margin-top: 20px;
+  }
+
+  #side-bar li {
+    padding: 20px;
+  }
+
+  #side-bar li:hover {
+    background-color: #d2c8c8;
+    transition: 0.1s ease-in-out;
+  }
+  
+  #side-bar.active {
+    left: 0;
+  }
+  
+  .active span {
+    position: absolute;
+  }
+  
+  .active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  
+  .active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .active ~ .content {
+    opacity: 0.3;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 340px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Ajoute une transition pour la rotation des barres */
+    height: 50px;
+    width: 50px;
+  }
+  .toggle-btn span {
+    width: 40px;
+    height: 7px;
+    border-radius: 5px;
+    background: #a8a4a4;
+    display: block;
+    margin-top: 4px;
+    transition: 0.3s ease;
     display: none;
-}
-
-.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg); /* Rotation de 45 degrés */
-}
-
-.open .bar:nth-child(2) {
-    opacity: 0; /* Disparition */
-}
-
-.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); /* Rotation de -45 degrés */
-}
-
+  }
+  
 /* END BURGER MENU */
 
 
@@ -143,7 +160,7 @@ nav a:hover {
     background-image: url("br-index.jpg");
     background-size: cover;
     max-width: 100%;
-    height: 70vh;
+    height: 500px;
     text-align: center;
 }
 
@@ -477,6 +494,11 @@ textarea {
     .desktopMenu {
         display: none;
     }
+
+    .toggle-btn span {
+        display: block;
+      }
+      
 
     .description {
         font-size: 1em;
