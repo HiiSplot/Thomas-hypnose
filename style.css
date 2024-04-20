@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .max-width {
-    max-width: 90%;
+    min-width: 90%;
 }
 
 .logo {
@@ -147,6 +147,17 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.flex-champ {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.flex-champ img {
+    max-width: 350px;
+    max-height: 100%;
 }
 
 .article {
@@ -314,6 +325,8 @@ nav a:hover {
 .DM-Serif-white-title {
     font-family: 'DM Serif Display';
     color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
 }
 
 .grid-categories {
@@ -337,9 +350,11 @@ a {
 
 .addictions {
     background-image: url('addiction.webp');
-    background-size: 100% auto;
-    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
@@ -348,7 +363,9 @@ a {
 
 .stress {
     background-image: url('stress.webp');
-    background-size: 100% auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -359,7 +376,8 @@ a {
 
 .sommeil {
     background-image: url('sommeil.webp');
-    background-size: 100% auto;
+    background-size: cover;
+    background-attachment: fixed;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -370,7 +388,9 @@ a {
 
 .poids {
     background-image: url('poids.webp');
-    background-size: 100% auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -380,8 +400,10 @@ a {
 }
 
 .douleur {
-    background-image: url('douleur.webp');
-    background-size: 100% auto;
+    background-image: url('douleur.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -392,7 +414,9 @@ a {
 
 .peurs {
     background-image: url('peur.webp');
-    background-size: 100% auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -402,8 +426,10 @@ a {
 }
 
 .confiance {
-    background-image: url('addiction.webp');
-    background-size: 100% auto;
+    background-image: url('confiance.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -413,8 +439,10 @@ a {
 }
 
 .relations {
-    background-image: url('addiction.webp');
-    background-size: 100% auto;
+    background-image: url('relations.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -424,7 +452,7 @@ a {
 }
 
 .passé {
-    background-image: url('addiction.webp');
+    background-image: url('passé.webp');
     background-size: 100% auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
@@ -435,8 +463,10 @@ a {
 }
 
 .deuil {
-    background-image: url('addiction.webp');
-    background-size: 100% auto;
+    background-image: url('deuil.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 100%;
     height: 300px;
@@ -632,6 +662,16 @@ textarea {
         padding: 0;
     }
 
+    .flex-champ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-champ img {
+        min-width: 600px;
+        max-height: 100%;
+    }
+
     .grid-categories {
         grid-template-columns: 100%;
     }
@@ -672,6 +712,11 @@ textarea {
 
     .description {
         font-size: 1em;
+    }
+
+    .flex-champ img {
+        min-width: 220px;
+        max-height: 100%;
     }
 
     .name {
@@ -718,6 +763,15 @@ textarea {
         max-width: 100%;
     }
 
+    .DM-Serif-white-title {
+        font-size: 1.8em;
+    }
+
+    .addictions, .stress, .sommeil, .poids, .douleur, .peurs, .confiance, .relations, .passé, .deuil {
+        background-size:cover;
+        justify-content: center;
+    }
+
     .article {
         padding: 30px;
     }
@@ -743,5 +797,15 @@ textarea {
         font-size: 0.8em;
     }
     
+
+}
+
+@media screen and (max-width: 800px) { 
+
+    .flex-champ img {
+
+        max-width: 250px;
+
+    }
 
 }
