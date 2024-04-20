@@ -5,9 +5,11 @@ const sidebar = document.getElementById("side-bar")
 const content = document.querySelector(".content")
 const btn = document.getElementById('btn');
 
+
 window.onscroll = function() {
 
     let currentScrollPos = window.scrollY;
+    
 
     if (currentScrollPos >= 150 && prevScrollpos > currentScrollPos) {
         menu.style.top = "0px";
@@ -22,6 +24,31 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+function checkScroll() {
+    const elementsLeft = document.querySelectorAll('.hidden-left');
+    const triggerOffset = window.innerHeight * 0.4;
+    elementsLeft.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (elementPosition < windowHeight - triggerOffset) {
+        element.classList.add('visible');
+      }
+    });
+
+      const elementsRight = document.querySelectorAll('.hidden-right');
+      elementsRight.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (elementPosition < windowHeight - triggerOffset) {
+          element.classList.add('visible');
+        }
+    });
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('resize', checkScroll);
+  window.onload = checkScroll;
 
 
 btn.addEventListener('click', () => {
