@@ -471,7 +471,7 @@ textarea {
 
 
     .padding-responsive {
-        padding: 50px;
+        padding: 30px;
     }
 
     .flex {
@@ -498,7 +498,6 @@ textarea {
     .toggle-btn span {
         display: block;
       }
-      
 
     .description {
         font-size: 1em;
