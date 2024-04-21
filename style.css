@@ -326,7 +326,7 @@ nav a:hover {
     font-family: 'DM Serif Display';
     color: #ffffff;
     text-align: center;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
 }
 
 .grid-categories {
@@ -705,6 +705,11 @@ textarea {
     .background-title {
         padding-top: 150px;
     }
+    
+    .DM-Serif-title {
+        font-size: 1.5em;
+    }
+
 
     .toggle-btn span {
         display: block;
@@ -729,11 +734,12 @@ textarea {
   
 
     .padding-responsive {
-        padding: 30px;
+        padding: 20px;
     }
 
     p {
         text-align: left;
+        font-size: 0.9em;
     }
 
     .grid-man-pic, .grid-pic {
@@ -772,6 +778,19 @@ textarea {
         justify-content: center;
     }
 
+    
+    .darker-bg {
+        padding: 18px;
+    }
+
+    .text-margin {
+        padding: 10px;
+    }
+
+    .title-margin {
+        padding:15px;
+    }
+
     .article {
         padding: 30px;
     }
@@ -780,9 +799,15 @@ textarea {
         padding: 30px;
     }
 
+    
+    .flex-champ img {
+        max-width: 280px;
+    }
+
     .green-bg {
         padding: 0;
         text-align: justify;
+                font-size: 0.9em;
     }
 
     input[type="text"], input[type="email"], select, textarea {
@@ -797,15 +822,5 @@ textarea {
         font-size: 0.8em;
     }
     
-
-}
-
-@media screen and (max-width: 800px) { 
-
-    .flex-champ img {
-
-        max-width: 250px;
-
-    }
 
 }
