@@ -4,6 +4,7 @@ let logo = document.querySelector(".logo");
 const sidebar = document.getElementById("side-bar")
 const content = document.querySelector(".content")
 const btn = document.getElementById('btn');
+const cards = document.querySelectorAll(".card");
 
 
 window.onscroll = function() {
@@ -59,3 +60,9 @@ btn.addEventListener('click', () => {
 content.addEventListener('click', () => {
     sidebar.classList.remove("active");
 })
+
+cards.forEach(card => {
+  card.addEventListener("click", function() {
+      this.classList.toggle("flipped");
+  });
+});
