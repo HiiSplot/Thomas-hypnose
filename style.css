@@ -162,7 +162,6 @@ nav a:hover {
 
 .article {
     align-items: center;
-    padding: 70px;
     background-color: #F5F5F5;
 }
 
@@ -236,7 +235,7 @@ nav a:hover {
     padding: 30px;
     font-family: 'Questrial';
     text-transform: uppercase;
-    width: 85%;
+    width: 100%;
     min-height: 300px;
     background-color: #F5F5F5;
     font-size: 0.5em;
@@ -797,10 +796,6 @@ textarea {
         font-size: 1em;
     }
 
-    .card {
-        width: 100%;
-    }
-
     .flex-champ img {
         min-width: 250px;
         max-height: 100%;
@@ -882,10 +877,6 @@ textarea {
 
     .title-margin {
         padding:15px;
-    }
-
-    .article {
-        padding: 30px;
     }
 
     .article-page {
