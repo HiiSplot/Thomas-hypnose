@@ -326,7 +326,7 @@ nav a:hover {
     font-family: 'DM Serif Display';
     color: #ffffff;
     text-align: center;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .grid-categories {
