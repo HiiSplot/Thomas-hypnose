@@ -34,7 +34,6 @@ function checkScroll() {
       const windowHeight = window.innerHeight;
       if (elementPosition < windowHeight - triggerOffset) {
         element.classList.add('visible');
-        element.style.display = "block";
       }
     });
 
@@ -44,7 +43,6 @@ function checkScroll() {
         const windowHeight = window.innerHeight;
         if (elementPosition < windowHeight - triggerOffset) {
           element.classList.add('visible');
-          element.style.display = "block";
         }
     });
   }
