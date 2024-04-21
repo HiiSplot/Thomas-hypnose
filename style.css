@@ -740,7 +740,7 @@ textarea {
     }
 
     .flex-champ img {
-        min-width: 600px;
+        max-width: 100%;
         max-height: 100%;
     }
 
@@ -802,7 +802,7 @@ textarea {
     }
 
     .flex-champ img {
-        min-width: 220px;
+        min-width: 250px;
         max-height: 100%;
     }
 
@@ -894,7 +894,7 @@ textarea {
 
     
     .flex-champ img {
-        max-width: 280px;
+        min-width: 280px;
     }
 
     .green-bg {
