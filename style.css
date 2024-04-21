@@ -119,6 +119,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     background-color:#F5F5F5;
+    padding-left: 10px;
     position: fixed;
     width: 100%;
     transition: 0.5s ease-in-out;
@@ -851,7 +852,7 @@ textarea {
 
     .text-card {
         font-size: 1.3em;
-        line-height: 15px;
+        line-height: 11px;
         padding: 25px;
     }
 
