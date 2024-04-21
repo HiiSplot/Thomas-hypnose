@@ -547,15 +547,13 @@ a {
 
 .hidden-left {
     opacity: 0;
-    display:none;
-    transform: translateX(-50px);
+    transform: translateX(-40px);
     transition: opacity 0.5s, transform 0.5s;
   }
 
   .hidden-right {
     opacity: 0;
-    display:none;
-    transform: translateX(+50px);
+    transform: translateX(+40px);
     transition: opacity 0.5s, transform 0.5s;
   }
 
