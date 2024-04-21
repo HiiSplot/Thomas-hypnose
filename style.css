@@ -868,6 +868,10 @@ textarea {
         transform: translateX(+20px);
     }
 
+    .visible {
+        transform: translateX(0);
+    }
+
     .addictions, .stress, .sommeil, .poids, .douleur, .peurs, .confiance, .relations, .passé, .deuil {
         background-size:cover;
         justify-content: center;
