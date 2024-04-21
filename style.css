@@ -858,6 +858,7 @@ textarea {
     .text-card {
         font-size: 1.3em;
         line-height: 15px;
+        text-transform: none;
     }
 
     .position {
