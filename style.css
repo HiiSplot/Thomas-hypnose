@@ -561,7 +561,6 @@ a {
 
   .visible {
     opacity: 1;
-    display:block;
     transform: translateX(0);
     z-index: 3;
   }
