@@ -704,6 +704,7 @@ textarea {
 
     .background-title {
         padding-top: 150px;
+        font-size: 1.3em;
     }
     
     .DM-Serif-title {
@@ -770,7 +771,7 @@ textarea {
     }
 
     .DM-Serif-white-title {
-        font-size: 1.7em;
+        font-size: 1.8em;
     }
 
     .addictions, .stress, .sommeil, .poids, .douleur, .peurs, .confiance, .relations, .passé, .deuil {
