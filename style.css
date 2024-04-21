@@ -861,11 +861,11 @@ textarea {
     }
 
     .hidden-left {
-        transform: translateX(-30px);
+        transform: translateX(-20px);
     }
 
     .hidden-right {
-        transform: translateX(+30px);
+        transform: translateX(+20px);
     }
 
     .addictions, .stress, .sommeil, .poids, .douleur, .peurs, .confiance, .relations, .passé, .deuil {
