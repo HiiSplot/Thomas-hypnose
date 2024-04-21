@@ -547,13 +547,13 @@ a {
 
 .hidden-left {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-20px);
     transition: opacity 0.5s, transform 0.5s;
   }
 
   .hidden-right {
     opacity: 0;
-    transform: translateX(+50px);
+    transform: translateX(+20px);
     transition: opacity 0.5s, transform 0.5s;
   }
 
@@ -858,18 +858,6 @@ textarea {
     .position {
         bottom: 30%;
         right: 50%;
-    }
-
-    .hidden-left {
-        transform: translateX(-20px);
-    }
-
-    .hidden-right {
-        transform: translateX(+20px);
-    }
-
-    .visible {
-        transform: translateX(0);
     }
 
     .addictions, .stress, .sommeil, .poids, .douleur, .peurs, .confiance, .relations, .passé, .deuil {
