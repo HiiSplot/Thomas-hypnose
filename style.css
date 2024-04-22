@@ -280,7 +280,6 @@ nav a:hover {
     transform: rotateY(180deg);
     color: black;
     padding: 30px;
-    line-height: 30px;
     border-radius: 10px;
     text-transform: none;
 }
