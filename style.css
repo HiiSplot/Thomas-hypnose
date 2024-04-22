@@ -233,7 +233,6 @@ nav a:hover {
     justify-content: space-evenly;
     padding: 30px;
     font-family: 'DM Sans';
-    text-transform: uppercase;
     width: 100%;
     min-height: 300px;
     background-color: #F5F5F5;
@@ -268,6 +267,7 @@ nav a:hover {
     align-items: center;
     color: black;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
 /* Style de la face arrière de la carte */
@@ -280,8 +280,9 @@ nav a:hover {
     transform: rotateY(180deg);
     color: black;
     padding: 30px;
-    line-height: 25px;
+    line-height: 30px;
     border-radius: 10px;
+    text-transform: none;
 }
 
 /* Classe pour le retournement de la carte */
