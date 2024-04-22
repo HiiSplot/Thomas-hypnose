@@ -1,0 +1,11 @@
+{
+    "name": "thomas-hypnose/site",
+    "authors": [
+        {
+            "name": "Laura Bensimon"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

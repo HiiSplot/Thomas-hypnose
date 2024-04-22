@@ -13,16 +13,15 @@ window.onscroll = function() {
     
 
     if (currentScrollPos >= 150 && prevScrollpos > currentScrollPos) {
-        menu.style.top = "0px";
-    } else {
-        menu.style.top = "-100px";
-        logo.style.top = "-100px";
-    }
+      menu.style.top = "0px"; // Afficher le menu
+  } else if (currentScrollPos > 150) {
+      menu.style.top = "-100px"; // Cacher le menu
+      logo.style.top = "-100px"; // Cacher le logo
+  } else {
+      menu.style.top = '100px'; // Cacher le menu à la réactualisation
+      logo.style.top = '0px'; // Maintenir le logo visible
+  }
 
-    if (currentScrollPos <= 10) {
-        menu.style.top = '100px';
-        logo.style.top = '0px';
-    }
     prevScrollpos = currentScrollPos;
 }
 
@@ -53,7 +52,6 @@ function checkScroll() {
 
 
 btn.addEventListener('click', () => {
-    console.log("clique");
     sidebar.classList.toggle("active");
 });
 
