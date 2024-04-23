@@ -746,6 +746,7 @@ textarea {
 
     .name {
         font-size: 2em;
+        font-weight: 400;
     }
 
     .padding {
@@ -791,14 +792,12 @@ textarea {
 
     .DM-Serif-white-title {
         font-size: 1.8em;
+        font-weight: 600;
+        padding: 10px;
     }
 
-    .DM-Serif-white-title, .DM-Serif-title, .green-title {
-        font-weight: 400;
-    }
-
-    .background-title {
-        font-weight: 300;
+    .DM-Serif-title, .green-title {
+        font-weight: 600;
     }
 
     .text-card {
