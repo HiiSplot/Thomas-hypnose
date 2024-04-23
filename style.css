@@ -801,6 +801,11 @@ textarea {
         padding: 30px;
     }
 
+    .background-title {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
     .DM-Serif-title, .green-title {
         font-weight: 400;
     }
