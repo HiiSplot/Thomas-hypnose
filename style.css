@@ -792,12 +792,12 @@ textarea {
 
     .DM-Serif-white-title {
         font-size: 1.8em;
-        font-weight: 600;
+        font-weight: 400;
         padding: 30px;
     }
 
     .DM-Serif-title, .green-title {
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .text-card {
