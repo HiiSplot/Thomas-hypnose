@@ -793,6 +793,10 @@ textarea {
         font-size: 1.8em;
     }
 
+    .DM-Serif-white-title, .DM-Serif-title, .green-title, .background-title {
+        font-weight: 400;
+    }
+
     .text-card {
         font-size: 1.3em;
         line-height: 11px;
