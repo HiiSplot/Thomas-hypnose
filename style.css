@@ -672,6 +672,11 @@ textarea {
         align-items: center;
     }
 
+    .text-card-front {
+        padding: 50px;
+        font-weight: 400;
+    }
+
     .padding-img {
         padding: 0;
     }
@@ -808,10 +813,7 @@ textarea {
 
     .text-card-front {
         font-size: 1.9em;
-        padding: 50px;
-        font-weight: 400;
     }
-
 
     .position {
         bottom: 30%;
