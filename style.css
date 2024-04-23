@@ -196,8 +196,6 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'DM Serif Display';
-    color: white;
     font-size: 1.5em;
 }
 
@@ -411,6 +409,13 @@ nav a:hover {
 .DM-Serif-title {
     font-family: 'DM Serif Display';
     color: #1E3933;
+}
+
+.DM-Serif-white {
+    font-family: 'DM Serif Display';
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.7em;
 }
 
 .DM-Serif-white-title {
@@ -686,6 +691,10 @@ textarea {
         flex-direction: column;
     }
 
+    .DM-Serif-white {
+        font-size: 1.5em;
+    }
+
     .flex-champ img {
         max-width: 100%;
         max-height: 100%;
@@ -710,8 +719,7 @@ textarea {
     
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 
     .bar {
         display: block;
@@ -721,24 +729,32 @@ textarea {
         display: none;
     }
 
-    .background-image {
-        height: 700px;
+    .toggle-btn span {
+        display: block;
+      }
+   
+    .background-title {
         padding-top: 150px;
     }
 
-    .background-title {
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .background-image {
+        height: 700px;
         padding-top: 150px;
-        font-size: 1.1em;
     }
     
     .DM-Serif-title {
         font-size: 1.5em;
     }
 
-
-    .toggle-btn span {
-        display: block;
-      }
+    .DM-Serif-white {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
 
     .description {
         font-size: 1em;
@@ -802,7 +818,7 @@ textarea {
     }
 
     .background-title {
-        font-size: 1em;
+        font-size: 1.4em;
         font-weight: 400;
     }
 

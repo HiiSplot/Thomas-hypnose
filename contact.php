@@ -160,7 +160,7 @@ if (!empty($lastName) && !empty($firstName) && !empty($email) && !empty($subject
 
         <div class="background-title">
             
-            <h1 class="text-align-center" id="contact">Contact</h1>
+            <h1 class="DM-Serif-white" id="contact">Contact</h1>
 
         </div>
         
