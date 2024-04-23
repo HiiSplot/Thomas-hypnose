@@ -868,7 +868,7 @@ textarea {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
     .address, .phone {
         gap: 5px;
@@ -878,7 +878,7 @@ textarea {
         font-size: 0.7em;
     }
 
-    .address h3 {
+    .address h3, .phone h3 {
         font-weight: 400;
     }
 
